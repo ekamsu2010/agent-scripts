@@ -9,7 +9,9 @@ exit
 fi
 #check number of processeur
 
-if ['nproc' -eq 1]
+c='nporc'
+
+if [$c -eq 1]
 then
 	echo " this server is very small"
 	exit 2
