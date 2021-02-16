@@ -2,7 +2,16 @@
 
 if [ &{UID} - ne 0 ]
 then
-
+echo
 echo " you ned access root"
+echo
 exit
+fi
+#check number of processeur
+
+if ['nproc' -eq 1]
+then
+	echo " this server is very small"
+	exit 2
+
 fi
